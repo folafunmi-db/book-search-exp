@@ -58,7 +58,7 @@ class Global extends Component {
             />
           </InputGroup>
         </FormGroup>
-        <Gallery />
+        <Gallery items={this.state.items} />
       </div>
     );
   }
