@@ -8,8 +8,16 @@ export default class Gallery extends Component {
     return (
       <div>
         {this.props.items.map((item, index) => {
-          let { title } = item.volumeInfo;
-          return <div id={index}>{title}</div>;
+          let { title, imageLinks, infoLink } = item.volumeInfo;
+          return (
+            <div id={index}>
+              <img
+                src={imageLinks !== undefined ? imageLinks.thumbnail : ""}
+                alt="Book cover"
+              />
+              {title}
+            </div>
+          );
         })}
       </div>
     );
