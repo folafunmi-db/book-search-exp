@@ -7,9 +7,9 @@ export default class Gallery extends Component {
   render() {
     return (
       <div>
-        {this.props.items.map((item) => {
+        {this.props.items.map((item, index) => {
           let { title } = item.volumeInfo;
-          return <div>{title}</div>;
+          return <div id={index}>{title}</div>;
         })}
       </div>
     );
