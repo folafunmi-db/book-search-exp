@@ -1,0 +1,38 @@
+.book {
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  margin: 10px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: .2s;
+}
+
+.book:hover {
+  opacity: 0.75;
+  padding: 4px;
+}
+
+
+.book-image {
+  width: 220px;
+  height: 220px;
+  border: 4px solid black;
+  border-radius: 4px;
+  object-fit: cover;
+  position: absolute;
+}
+
+
+.book-text {
+  background-color: black;
+  color: white;
+  opacity: 0.75;
+  margin-left: 3px;
+  text-align: center;
+  width: 214px;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
