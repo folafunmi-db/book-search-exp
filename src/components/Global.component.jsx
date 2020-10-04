@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import { FormGroup, FormControl, InputGroup } from "react-bootstrap";
 import { AiOutlineFileSearch } from "react-icons/ai";
+import './Global.styles.css'
 
 class Global extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Global extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <h2>Book Search Explorer</h2>
         <FormGroup>
           <InputGroup>
@@ -32,7 +33,7 @@ class Global extends Component {
                 }
               }}
             />
-            <AiOutlineFileSearch onClick={() => this.search()} />
+            <AiOutlineFileSearch className="search-button" onClick={() => this.search()} />
           </InputGroup>
         </FormGroup>
       </div>

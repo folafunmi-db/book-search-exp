@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+* {
+  font-family: "Dosis", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin: auto;
+  padding: 1rem;
+}
+
+.search-button {
+  border: 1px solid grey;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: white;
+  border-radius: 0px 4px 4px 0px;
+  transition: 0.2s;
+}
+
+.search-button:hover {
+  background: linear-gradient(
+    140deg,
+    rgba(34, 66, 195, 1) 0%,
+    rgba(194, 45, 253, 1) 100%
+  );
+  padding: 3px;
+}
