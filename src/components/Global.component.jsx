@@ -26,6 +26,11 @@ class Global extends Component {
               type="text"
               placeholder="Search for a book"
               onChange={(event) => this.setState({ query: event.target.value })}
+              onKeyPress={event => {
+                if (event.key === 'Enter') {
+                  this.search();
+                }
+              }}
             />
             <AiOutlineFileSearch onClick={() => this.search()} />
           </InputGroup>
