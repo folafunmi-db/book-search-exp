@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 h2 {
@@ -20,14 +21,15 @@ h2 {
   height: 2.4rem;
   background-color: white;
   border-radius: 0px 4px 4px 0px;
+  padding: 2px;
   transition: 0.2s;
 }
 
 .search-button:hover {
   background: linear-gradient(
     140deg,
-    rgba(34, 66, 195, 1) 0%,
-    rgba(194, 45, 253, 1) 100%
+    rgb(105, 129, 224) 0%,
+    rgb(205, 99, 247) 100%
   );
-  padding: 3px;
+  padding: 4px;
 }

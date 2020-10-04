@@ -1,7 +1,7 @@
 /*jshint esversion: 10 */
 
 import React from "react";
-import Global from './components/Global.component.jsx';
+import Global from './components/Global/Global.component.jsx';
 
 function App() {
   return (
